@@ -1,4 +1,10 @@
 defmodule ListFilter do
+  @doc """
+  ## Exemple
+
+  iex> ListFilter.call(["1", "2", "3"])
+  {:ok, 2}
+  """
   def call([]), do: {:error, "the list must contain at least one item"}
 
   def call(list) do
